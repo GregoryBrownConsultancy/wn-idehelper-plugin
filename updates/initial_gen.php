@@ -5,7 +5,7 @@ use Artisan;
 use Exception;
 use Seeder;
 
-class initialGen extends Seeder
+class InitialGen extends Seeder
 {
     public function run()
     {
