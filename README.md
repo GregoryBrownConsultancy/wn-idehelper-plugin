@@ -7,12 +7,14 @@ This plugin adds [barryvdh/ide-helpers](https://github.com/barryvdh/laravel-ide-
 
 ## Installation
 
-* From the root of your application (where `artisan` is located.) 
-* ```bash
+From the root of your application (where `artisan` is located.) run the following commands:
+
+```bash
 git clone https://github.com/GregoryBrownConsultancy/wn-idehelper-plugin.git plugins/gbc/idehelper
+composer update
+php artisan ide-helper:generate
 ```
-* `composer update`
-* `php artisan ide-helper:generate`
+
 
 ## Configuration
 
