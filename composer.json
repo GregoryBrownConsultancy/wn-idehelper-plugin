@@ -1,18 +1,23 @@
 {
-    "name": "flynsarmy/oc-idehelper-plugin",
+    "name": "gbc/wn-idehelper-plugin",
     "type": "october-plugin",
-    "description": "OctoberCMS plugin to make development easier by providing IDE helpers",
-    "homepage": "https://github.com/Flynsarmy/oc-idehelper-plugin",
-    "keywords": ["october", "octobercms", "laravel", "ide", "helper", "vscode", "phpstorm", "php"],
+    "description": "WinterCMS plugin to make development easier by providing IDE helpers",
+    "homepage": "https://github.com/GregoryBrownConsultancy/wn-idehelper-plugin.git",
+    "keywords": ["winter", "wintercms", "laravel", "ide", "helper", "vscode", "phpstorm", "php"],
     "license": "MIT",
     "authors": [
         {
             "name": "Flynsarmy",
             "homepage": "https://www.flynsarmy.com/"
-        }
+        },
+        {
+            "name": "GregoryBrown",
+            "homepage": "https://gregorybrown.com.br/"
+        },
+        
     ],
     "require": {
         "composer/installers": "~1.0",
-        "barryvdh/laravel-ide-helper": "^2.7.0"
+        "barryvdh/laravel-ide-helper": ">=2.7.0"
     }
 }

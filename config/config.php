@@ -99,8 +99,8 @@ return [
     'include_helpers' => false,
 
     'helper_files'    => [
-        base_path().'/vendor/october/rain/src/Support/helpers.php',
-        base_path().'/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
+        base_path() . '/vendor/winter/store/src/Support/helpers.php',
+        base_path() . '/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
     ],
 
     /*
@@ -116,8 +116,8 @@ return [
     'model_locations' => array_map(function ($filepath) {
         return substr($filepath, strlen(base_path()) + 1);
     }, array_merge(
-        glob(base_path().'/modules/*/models'),
-        glob(base_path().'/plugins/*/*/models')
+        glob(base_path() . '/modules/*/models'),
+        glob(base_path() . '/plugins/*/*/models')
     )),
 
     /*
@@ -129,8 +129,7 @@ return [
     |
     */
 
-    'ignored_models' => [
-    ],
+    'ignored_models' => [],
 
     /*
     |--------------------------------------------------------------------------
@@ -142,7 +141,7 @@ return [
     */
 
     'extra' => [
-        'Eloquent' => ['October\Rain\Database\Builder', 'October\Rain\Database\QueryBuilder'],
+        'Eloquent' => ['Winter\Storm\Database\Builder', 'Winter\Storm\Database\QueryBuilder'],
         'Session'  => ['Illuminate\Session\Store'],
     ],
     'magic' => [
@@ -199,8 +198,7 @@ return [
     |
     */
 
-    'custom_db_types' => [
-    ],
+    'custom_db_types' => [],
 
     /*
      |--------------------------------------------------------------------------

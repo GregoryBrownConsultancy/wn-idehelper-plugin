@@ -1,12 +1,11 @@
 <?php
-
-namespace Flynsarmy\IdeHelper\Updates;
+namespace Gbc\IdeHelper\Updates;
 
 use Artisan;
 use Exception;
-use October\Rain\Database\Updates\Seeder;
+use Seeder;
 
-class initial_gen extends Seeder
+class initialGen extends Seeder
 {
     public function run()
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Flynsarmy\IdeHelper;
+namespace Gbc\IdeHelper;
 
 use App;
 use Config;
@@ -21,15 +21,15 @@ class Plugin extends PluginBase
         return [
             'name'        => 'IdeHelper',
             'description' => 'Make development easier with IDE helpers!',
-            'author'      => 'Flynsarmy',
+            'author'      => 'Gbc',
             'icon'        => 'icon-code',
-            'homepage'    => 'https://github.com/Flynsarmy/oc-idehelper-plugin',
+            'homepage'    => 'https://github.com/Gbc/oc-idehelper-plugin',
         ];
     }
 
     public function boot()
     {
-        Config::set('ide-helper', Config::get('flynsarmy.idehelper::config'));
+        Config::set('ide-helper', Config::get('gbc.idehelper::config'));
         App::register('\Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider');
     }
 }
